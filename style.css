@@ -54,7 +54,7 @@ table {
 .panel{
     border: 5px solid black;
     /*top&bottom, left&right*/
-    padding: 10px 10px;
+   /* padding: 0px 10px;*/
     width: 100%;
     max-width: 95%;
     display: flex;
@@ -66,13 +66,18 @@ table {
 .header {
     border: 2px solid white;
     width: 50%;
-    color: #D1FFD1;
+    color: white;
 }
 
 .header a{
     color: #D1FFD1;
 }
 
+.header ul {
+    font-variant: small-caps;
+    font-family: "Arial Black", "Courier";
+    font-size: 1.5em;
+}
 .side-nav {
     border: 2px solid white;
     padding: 0px 15px; 
@@ -114,4 +119,26 @@ table {
     padding: 0px 5px;
     margin-left: 75px;
     margin-top: 5px;
+}
+
+.bottom-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 2px;
+}
+
+.bottom-panel a{
+    color: #D1FFD1;
+}
+
+.bottom-left {
+    border: 2px solid white;
+    width: 50%;
+}
+
+.bottom-right {
+    border: 2px solid white;
+    text-align: right;
+    width: 50%
 }
