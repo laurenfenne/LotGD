@@ -35,9 +35,7 @@ body {
     background-color: #003800;
     color: #CCCCCC;
 }
-/*ol, ul {
-	list-style: none;
-}*/
+
 blockquote, q {
 	quotes: none;
 }
@@ -52,25 +50,46 @@ table {
 }
 
 .panel{
-    border: 5px solid black;
-    /*top&bottom, left&right*/
-   /* padding: 0px 10px;*/
-    width: 100%;
+    width: 95%;
     max-width: 95%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    /*text-transform: uppercase;*/
+}
+
+.top-panel {
+    justify-content: space-between;  
 }
 
 .header {
-    border: 2px solid white;
-    width: 50%;
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+    flex: 1;
     color: white;
 }
 
-.header a{
+.logo-header {
+    border: 2px dotted white;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 15px;
+}
+
+.logo-header a{
     color: #D1FFD1;
+}
+
+.logo-img {
+    border: 2px dotted white;
+    align-items: flex-end;
+}
+
+.top-links {
+    border: 2px dotted white;
+    
 }
 
 .header ul {
@@ -78,13 +97,19 @@ table {
     font-family: "Arial Black", "Courier";
     font-size: 1.5em;
 }
+
+.middle-panel{
+    display: flex;
+    max-width: 95%;
+    border: 2px dotted white;
+}
 .side-nav {
-    border: 2px solid white;
+    border: 2px solid #0f460f;
+    border-radius: 5px;
     padding: 0px 15px; 
     width: 15%;
     font-size: small;
     margin-right: 10px;
-    /*color: #ffff00;  YELLOOWWWW*/
 }
 
 .side-nav p {
@@ -94,7 +119,7 @@ table {
 
 .side-nav h2 {
 	text-align: center;
-    font-size: ;
+    
     font-variant: small-caps;
 }
 
@@ -103,7 +128,8 @@ table {
 }
 
 .main-content {
-        border: 2px solid white;
+        border: 2px solid #0f460f;
+        border-radius: 5px;
         padding: 0px 5px;
         text-align: center;
         width: 85%;
@@ -114,7 +140,8 @@ table {
 
 .donations-box {
     text-align: left;
-    border: 2px dotted lightgreen;
+    border: 2px solid #0f460f;
+    border-radius: 5px;
     height: 30%;
     padding: 0px 5px;
     margin-left: 75px;
@@ -124,21 +151,26 @@ table {
 .bottom-panel {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0px 2px;
+    border: 2px #0f460f solid;
+    border-radius: 5px;
+    align-items: center;
+
 }
 
 .bottom-panel a{
     color: #D1FFD1;
+
 }
 
 .bottom-left {
-    border: 2px solid white;
-    width: 50%;
+    border: 2px dotted white;
+    flex: 1;
+    padding: 0px 15px;
 }
 
 .bottom-right {
-    border: 2px solid white;
+   border: 2px dotted white;
     text-align: right;
-    width: 50%
+    flex: 1;
+    padding: 0px 15px;
 }
