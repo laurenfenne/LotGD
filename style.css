@@ -91,6 +91,10 @@ list of these? */
     text-decoration: none;
 }
 
+.bold-nav{
+    font-weight: 900;
+    color:#D1FFD1;
+}
 .nav-letter {
     color: #00FF00;
 	text-decoration: underline; 
