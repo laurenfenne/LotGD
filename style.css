@@ -113,13 +113,13 @@ list of these? */
 }
 
 .main-content {
-    flex: 4;
+    flex: 5;
     display: flex;
     text-align: center;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 10px 10px;
-    gap: 5%;
+    gap: 7%;
 }
 
 .main-content p {
