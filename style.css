@@ -1,176 +1,170 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-/*	margin: 0;*/
-/*	padding: 0;*/
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
+* {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: small;
     background-color: #003800;
     color: #CCCCCC;
 }
 
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+h1 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight:900;
 }
 
-.panel{
-    width: 95%;
-    max-width: 95%;
+p, h2 {
+    font-size: 0.8rem;
+}
+
+h2 {
+    margin-bottom: 0px;
+    color: white;
+}
+
+h1, .nav-heading {
+    font-variant: small-caps;
+}
+
+/* perhaps here we could do something like .panel
+where we just have .green-box and add it to the class
+list of these? */
+.top-lotgd, .side-nav, .main-content, .donations-box, .bottom-panel {
+    border: 2px solid #0f460f;
+    border-radius: 5px;
+}
+
+.panel {
+    padding: 0 15px;
+    border: 1px dotted #CCCCCC; /* temporary */
+}
+
+/****** TOP PANEL STUFF *******/
+.top-panel {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
     align-items: flex-start;
 }
 
-.top-panel {
-    justify-content: space-between;  
+.top-lotgd {
+    padding-right: 10px;
 }
 
-.header {
-    border: 2px solid #0f460f;
-    border-radius: 5px;
-    flex: 1;
-    color: white;
+.top-logo-nav {
+   text-align: end;
+   color:#D1FFD1;
+   font-size: 0.8rem;
 }
 
-.logo-header {
-    border: 2px dotted white;
-    flex: 1;
-    color: white;
+.top-logo-nav a, .top-logo-nav p {
+    margin-top: 0px;
+    color:#D1FFD1;
+}
+
+.top-logo-nav a.bold {
+    font-weight: bolder;
+}
+
+.top-logo-nav a:hover {
+    color: yellow;
+}
+
+/****** MIDDLE PANEL STUFF *******/
+.middle-panel {
+    padding: 0 10px; /* middle panel seems to be more horizontally inset than header/footer */
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0px 15px;
+    gap: 10px;
+    align-items: flex-start;
 }
 
-.logo-header a{
-    color: #D1FFD1;
-}
-
-.logo-img {
-    border: 2px dotted white;
-    align-items: flex-end;
-}
-
-.top-links {
-    border: 2px dotted white;
-    
-}
-
-.header ul {
-    font-variant: small-caps;
-    font-family: "Arial Black", "Courier";
-    font-size: 1.5em;
-}
-
-.middle-panel{
-    display: flex;
-    max-width: 95%;
-    border: 2px dotted white;
-}
 .side-nav {
-    border: 2px solid #0f460f;
-    border-radius: 5px;
-    padding: 0px 15px; 
-    width: 15%;
-    font-size: small;
-    margin-right: 10px;
-}
-
-.side-nav p {
-	text-align: left;
-    color: #D1FFD1;
-}
-
-.side-nav h2 {
-	text-align: center;
+    flex: 1;
+    padding: 0 10px;
     
-    font-variant: small-caps;
+}
+
+.side-nav p{
+    margin-top: 0px;
 }
 
 .side-nav a{
-    color: #D1FFD1;
+    color:#D1FFD1;
+    text-decoration: none;
+}
+
+.nav-letter {
+    color: #00FF00;
+	text-decoration: underline; 
+}
+
+.side-nav a:hover {
+    background-color: #015D01;
+	border-top: 1px solid #029402;
+	border-left: 1px solid #029402;
+	border-bottom: 1px solid #013901;
+	border-right: 1px solid #013901;
+}
+
+.nav-heading {
+    text-align: center;
 }
 
 .main-content {
-        border: 2px solid #0f460f;
-        border-radius: 5px;
-        padding: 0px 5px;
-        text-align: center;
-        width: 85%;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
+    flex: 4;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px 10px;
+    gap: 5%;
+}
+
+.main-content p {
+    margin-top: 0px;
 }
 
 .donations-box {
     text-align: left;
-    border: 2px solid #0f460f;
-    border-radius: 5px;
-    height: 30%;
-    padding: 0px 5px;
-    margin-left: 75px;
-    margin-top: 5px;
+    padding: 0 10px;
 }
+
+.br-green {
+    color:#00FF00;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+/****** BOTTOM PANEL STUFF *******/
 
 .bottom-panel {
     display: flex;
-    flex-direction: row;
-    border: 2px #0f460f solid;
-    border-radius: 5px;
     align-items: center;
-
+    justify-content: space-between;
 }
 
-.bottom-panel a{
-    color: #D1FFD1;
-
-}
-
-.bottom-left {
-    border: 2px dotted white;
-    flex: 1;
-    padding: 0px 15px;
+.bottom-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .bottom-right {
-   border: 2px dotted white;
     text-align: right;
-    flex: 1;
-    padding: 0px 15px;
 }
