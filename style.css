@@ -33,7 +33,7 @@ list of these? */
 
 .panel {
     padding: 0 15px;
-    border: 1px dotted #CCCCCC; /* temporary */
+   /* border: 1px dotted #CCCCCC; /* temporary */
 }
 
 /****** TOP PANEL STUFF *******/
@@ -161,6 +161,7 @@ list of these? */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .bottom-left{
